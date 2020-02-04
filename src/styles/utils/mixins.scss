@@ -1,0 +1,32 @@
+@mixin m10 {
+  margin: 10px 0;
+}
+@mixin m20 {
+  margin: 20px 0;
+}
+@mixin m30 {
+  margin: 30px 0;
+}
+@mixin m40 {
+  margin: 40px 0;
+}
+@mixin m50 {
+  margin: 50px 0;
+}
+
+@mixin elem {
+  display: block;
+  content: '';
+}
+
+@mixin posr {
+  position: relative;
+}
+
+@mixin posa {
+  position: absolute;
+}
+
+@mixin block {
+  display: block;
+}

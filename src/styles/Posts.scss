@@ -1,0 +1,85 @@
+@import './utils/vars';
+@import './utils/mixins';
+
+.post {
+  margin: 0 0 30px 0;
+  padding: 50px 0 0 0;
+  border-top: 1px solid $textColor;
+  width: 100%;
+  flex-shrink: 0;
+
+  &__title {
+    margin: 0 0 20px 0;
+    font-size: 32px;
+    width: 80%;
+    font-family: $lightHeaderFont;
+  }
+  &__body {
+    font-size: 18px;
+  }
+  &__button {
+    @include block;
+    margin: 10px 0 0 0;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    color: $primaryTextColor;
+    width: 200px;
+    height: 40px;
+    background: $primaryColor;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    &:hover {
+      color: $primaryTextColor;
+      text-decoration: none;
+    }
+  }
+}
+
+.add-post {
+  padding: 0 0 15px 0;
+
+  &__title,
+  &__body {
+    @include m10;
+    width: 400px;
+    height: 40px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    color: $textColor;
+    border-bottom: 2px solid $textColor;
+
+    &::placeholder,
+    &::-webkit-input-placeholder,
+    &::-moz-placeholder {
+      color: $textColor;
+    }
+  }
+
+  &__body {
+    height: 120px;
+    font-size: 18px;
+    resize: none;
+  }
+  &__button {
+    @include m10;
+    font-size: 20px;
+    color: $primaryTextColor;
+    width: 200px;
+    height: 40px;
+    background: $primaryColor;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+.back {
+  @include m20;
+  font-size: 22px;
+}

@@ -1,0 +1,35 @@
+@import './utils/mixins';
+@import './utils/vars';
+
+@import './Posts';
+
+body {
+  background: $backgroundColor;
+}
+
+* {
+  color: $textColor;
+  font-family: $textFont;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  @include m50;
+  @include posr;
+  color: $textColor;
+  font-size: 70px;
+  text-align: center;
+  font-family: $headerFont;
+
+  &::after {
+    @include elem;
+    @include posa;
+    width: 180px;
+    height: 7px;
+    left: calc(50% - 90px);
+    bottom: -20px;
+    background: $textColor;
+  }
+}

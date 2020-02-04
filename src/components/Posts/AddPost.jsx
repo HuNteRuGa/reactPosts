@@ -8,7 +8,7 @@ export default function(props) {
     <form
       onSubmit={e => {
         e.preventDefault();
-        if (title.trim() !== '' && body.trim !== '') {
+        if (title.trim() !== '' && body.trim() !== '') {
           props.onAddPost({ title, body, posts: props.posts });
           setTitle('');
           setBody('');
